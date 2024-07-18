@@ -12,7 +12,7 @@ const Light = () => {
 				setSwitchLight(!switchLight)
 			}}
 			style={{ width: '100px', height: '50px' }}>
-			{switchLight ? 'On' : 'Of'}
+			{switchLight ? 'On' : 'Off'}
 		</button>
 	)
 }
