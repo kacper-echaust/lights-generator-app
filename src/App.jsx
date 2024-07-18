@@ -1,7 +1,12 @@
-import "./App.css";
+import './App.css'
+import { Counter } from './Counter'
 
 function App() {
-  return <div>Lights generator</div>;
+	return (
+		<div>
+			<Counter />
+		</div>
+	)
 }
 
-export default App;
+export default App
