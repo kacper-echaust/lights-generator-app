@@ -1,0 +1,9 @@
+.counter-container {
+	display: flex;
+}
+.counter-container svg {
+	margin-left: 6px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}

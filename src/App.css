@@ -3,3 +3,21 @@
   margin: 0 auto;
   padding: 2rem;
 }
+.buttons-container {
+  display:flex;
+  margin: 70px 70px; 
+}
+.buttons-container > *{
+  margin-right: 32px;
+}
+.buttons-container button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}

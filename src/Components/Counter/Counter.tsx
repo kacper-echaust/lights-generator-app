@@ -1,26 +1,30 @@
 import React from 'react'
 import { useState } from 'react'
-const Counter = () => {
+import { AddIcon } from '../icons/AddIcon'
+import { MinusIcon } from '../icons/MinusIcon'
+import './Counter.css'
+
+const Counter = ({ text }) => {
 	const [counter, setCounter] = useState(0)
+
 	const handleClick = operator => {
 		if (counter <= 0 && operator === '-') return
 		setCounter(prevCounter => (operator === '+' ? prevCounter + 1 : prevCounter - 1))
 	}
+
 	return (
-		<div>
-			<p>{counter}</p>
-			<button
+		<div className='counter-container'>
+			<p>{`${counter} ${text}`}</p>
+			<MinusIcon
 				onClick={() => {
 					handleClick('-')
-				}}>
-				-
-			</button>
-			<button
+				}}
+			/>
+			<AddIcon
 				onClick={() => {
 					handleClick('+')
-				}}>
-				+
-			</button>
+				}}
+			/>
 		</div>
 	)
 }
