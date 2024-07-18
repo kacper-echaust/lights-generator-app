@@ -11,7 +11,9 @@ const Light = () => {
 			onClick={() => {
 				setSwitchLight(!switchLight)
 			}}
-			style={{ width: '100px', height: '50px' }}></button>
+			style={{ width: '100px', height: '50px' }}>
+			{switchLight ? 'On' : 'Of'}
+		</button>
 	)
 }
 
