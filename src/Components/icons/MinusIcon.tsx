@@ -8,7 +8,8 @@ const MinusIcon = ({ onClick }) => {
 			height='24'
 			viewBox='0 0 24 24'
 			fill='none'
-			onClick={onClick}>
+			onClick={onClick}
+			values='minus'>
 			<path d='M17 12H7' stroke='white' stroke-linecap='round' />
 			<path
 				fill-rule='evenodd'

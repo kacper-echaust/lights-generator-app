@@ -4,7 +4,7 @@ import './SingleLight.css'
 import LightTurnedOff from '/images/light-turned-off.svg'
 import LightBlue from '/images/light-blue.svg'
 
-const Light = () => {
+const SingleLight = () => {
 	const [switchLight, setSwitchLight] = useState(false)
 
 	const imageUrl = switchLight ? LightBlue : LightTurnedOff
@@ -16,4 +16,4 @@ const Light = () => {
 	return <img src={imageUrl} alt='light' onClick={handleSwitchLight} />
 }
 
-export { Light }
+export { SingleLight }
