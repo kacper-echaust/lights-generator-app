@@ -3,11 +3,17 @@ import { useState } from 'react'
 import './SingleLight.css'
 import LightTurnedOff from '/images/light-turned-off.svg'
 import LightBlue from '/images/light-blue.svg'
+import LightGreen from '/images/light-green.svg'
+import LightOrange from '/images/light-orange.svg'
+import LightPink from '/images/light-pink.svg'
+import LightRed from '/images/light-red.svg'
+import LightYellow from '/images/light-yellow.svg'
 
+const lights = [LightBlue, LightGreen, LightOrange, LightPink, LightRed, LightYellow]
 const SingleLight = () => {
 	const [switchLight, setSwitchLight] = useState(false)
-
-	const imageUrl = switchLight ? LightBlue : LightTurnedOff
+	const randomColor = Math.round(Math.random() * lights.length)
+	const imageUrl = switchLight ? LightTurnedOff : lights[randomColor]
 
 	const handleSwitchLight = () => {
 		setSwitchLight(!switchLight)
