@@ -12,8 +12,11 @@ import LightYellow from '/images/light-yellow.svg'
 const lights = [LightBlue, LightGreen, LightPink, LightOrange, LightRed, LightYellow]
 const SingleLight = () => {
 	const [switchLight, setSwitchLight] = useState(true)
-	const randomColor = Math.floor(Math.random() * lights.length)
-	const imageUrl = switchLight ?  lights[randomColor] : LightTurnedOff
+	const getRandomIndex = () => {
+		return Math.floor(Math.random() * lights.length)
+	}
+	const randomIndex = getRandomIndex()
+	const imageUrl = switchLight ? lights[randomIndex] : LightTurnedOff
 
 	const handleSwitchLight = () => {
 		setSwitchLight(!switchLight)
