@@ -9,7 +9,7 @@ import LightPink from '/images/light-pink.svg'
 import LightRed from '/images/light-red.svg'
 import LightYellow from '/images/light-yellow.svg'
 
-const lights = [LightBlue, LightGreen, LightOrange, LightPink, LightRed, LightYellow]
+const lights = [LightBlue, LightGreen, LightPink, LightOrange, LightRed, LightYellow]
 const SingleLight = () => {
 	const [switchLight, setSwitchLight] = useState(false)
 	const randomColor = Math.round(Math.random() * lights.length)
